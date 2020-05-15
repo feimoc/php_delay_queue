@@ -58,10 +58,6 @@ docker run -d --name rabbitmq3.7.7 -p 5672:5672 -p 15672:15672 -v `pwd`/data:/va
 
 ![](https://upload-images.jianshu.io/upload_images/9930928-088465582d2d0669.png)
 
-### 下载项目
-```php
-git clone https://github.com/feimoc/php_delay_queue.git
-```
 
 ### 新增消息
 
