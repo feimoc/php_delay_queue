@@ -28,7 +28,7 @@ sudo docker images
 ```
 ![](https://upload-images.jianshu.io/upload_images/9930928-f710f0b7f31ad049.png)
 
-- 启动容器
+- 启动容器 (需要将最后的镜像id 2888deb59dfc 替换成你自己的id)
 
 ```docker
 docker run -d --name rabbitmq3.7.7 -p 5672:5672 -p 15672:15672 -v `pwd`/data:/var/lib/rabbitmq --hostname myRabbit -e RABBITMQ_DEFAULT_VHOST=/ -e RABBITMQ_DEFAULT_USER=gust -e RABBITMQ_DEFAULT_PASS=gust  2888deb59dfc
