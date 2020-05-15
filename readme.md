@@ -53,7 +53,9 @@ docker run -d --name rabbitmq3.7.7 -p 5672:5672 -p 15672:15672 -v `pwd`/data:/va
    sudo docker ps -a
 ```
 ![](https://upload-images.jianshu.io/upload_images/9930928-a734d94678df8625.png)
+
 访问 http://Server-IP:15672 帐号gust 密码gust
+
 ![](https://upload-images.jianshu.io/upload_images/9930928-088465582d2d0669.png)
 
 #### 下载项目
