@@ -6,8 +6,8 @@
 
 1. 订单在十分钟之内未支付则自动取消。
 2. 新创建的店铺，如果在十天内都没有上传过商品，则自动发送消息提醒。
-3. 账单在一周内未支付，则自动结算。
-4. 用户注册成功后，如果三天内没有登陆则进行短信提醒。
+3. 用户注册成功10分钟后发送邮件。
+4. 账单在一周内未支付，则自动结算。
 5. 用户发起退款，如果三天内没有得到处理则通知相关运营人员。
 6. 预定会议后，需要在预定的时间点前十分钟通知各个与会人员参加会议。
 
@@ -61,19 +61,6 @@ docker run -d --name rabbitmq3.7.7 -p 5672:5672 -p 15672:15672 -v `pwd`/data:/va
 #### 下载项目
 ```php
 git clone https://github.com/feimoc/php_delay_queue.git
-```
-#### 运行项目
-
-- 设置composer国内源
-
-```php
-composer config repo.packagist composer https://mirrors.aliyun.com/composer/
-```
-
-- 安装php-amqplib 
-
-```php
-composer require php-amqplib/php-amqplib
 ```
 
 ### 新增消息

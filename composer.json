@@ -11,5 +11,8 @@
       "Queue\\" : "queue/",
       "Config\\": "config/"
     }
+  },
+  "require": {
+    "php-amqplib/php-amqplib": "^2.11"
   }
 }
