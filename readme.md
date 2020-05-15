@@ -1,4 +1,4 @@
-##php + RabbitMq 实现延时队列
+## php + RabbitMq 实现延时队列
 
 ### 延时队列使用场景
 
