@@ -1,4 +1,4 @@
-## php + RabbitMq 实现延时队列
+##php + RabbitMq 实现延时队列
 
 ### 延时队列使用场景
 
@@ -28,7 +28,7 @@ sudo docker images
 ```
 ![](https://upload-images.jianshu.io/upload_images/9930928-f710f0b7f31ad049.png)
 
-- 启动容器 (需要将最后的容器id 2888deb59dfc 替换成你自己的)
+- 启动容器
 
 ```docker
 docker run -d --name rabbitmq3.7.7 -p 5672:5672 -p 15672:15672 -v `pwd`/data:/var/lib/rabbitmq --hostname myRabbit -e RABBITMQ_DEFAULT_VHOST=/ -e RABBITMQ_DEFAULT_USER=gust -e RABBITMQ_DEFAULT_PASS=gust  2888deb59dfc
@@ -56,7 +56,20 @@ docker run -d --name rabbitmq3.7.7 -p 5672:5672 -p 15672:15672 -v `pwd`/data:/va
 访问 http://Server-IP:15672 帐号gust 密码gust
 ![](https://upload-images.jianshu.io/upload_images/9930928-088465582d2d0669.png)
 
-#### 安装php-amqplib
+#### 下载项目
+```php
+git clone https://github.com/feimoc/php_delay_queue.git
+```
+#### 运行项目
+
+- 设置composer国内源
+
+```php
+composer config repo.packagist composer https://mirrors.aliyun.com/composer/
+```
+
+- 安装php-amqplib 
+
 ```php
 composer require php-amqplib/php-amqplib
 ```

@@ -9,8 +9,8 @@ class RabbitMq{
                 [
                     'host'  => '127.0.0.1',
                     'port'  => '5672',
-                    'user'  => 'feimo',//默认gust
-                    'pass'  => 'feimo',//默认gust
+                    'user'  => 'gust',//默认gust
+                    'pass'  => 'gust',//默认gust
                     'vhost' => '/',
                 ],
             ],
