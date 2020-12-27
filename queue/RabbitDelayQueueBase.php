@@ -95,7 +95,7 @@ class RabbitDelayQueueBase
         $messageBody = json_encode($arrContent);
         $properties  = ['content_type' => 'text/plain', 'delivery_mode' => AMQPMessage::DELIVERY_MODE_PERSISTENT];
         if ($expiration > 0) {
-            array_merge($properties, ['expiration' => $expiration]);
+            $properties['expiration'] = $expiration;
         }
         $message = new AMQPMessage(
             $messageBody,
