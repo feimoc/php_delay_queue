@@ -2,7 +2,7 @@
   "name": "feimo/php_delay_queue",
   "authors": [
     {
-      "name": "feimo",
+      "name" : "feimo",
       "email": "feimolee@gmail.com"
     }
   ],
